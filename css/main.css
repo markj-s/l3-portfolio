@@ -1,0 +1,133 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #6b7886;
+  font-weight: 300;
+  margin: 0;
+    padding-bottom: 50px;
+}
+
+/* RESPONSIVE SETUP*/
+
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-4 {
+  width: 33.33%;
+  text-align: center;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*END OF RESPONSIVE SETUP*/
+
+/*HEADER*/
+.logo {
+    border-radius: 50%;
+    border: 5px solid #F8981C;
+    margin-top: 20px;
+    
+    margin-left: 10px;
+}
+
+.name, .profile-title {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.name {
+    font-size: 50px;
+  margin: 10px 0px 1px 0px;
+    font-weight: 300;
+}
+
+.profile-title {
+    font-size: 18px;
+}
+
+.header-border {
+    border-bottom: 4px solid #BCBBBB;
+    margin-bottom: 25px;
+}
+
+/*END OF HEADER*/
+
+/*FEATURED*/
+
+.work {
+    padding-left: 15px;
+    color: #BCBBBB;
+  font-size: 20px;
+}
+/*END OF FEATURED*/
+
+/*PORTFOLIO SECTION*/
+.portfolio {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.app-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: -10px;
+}
+
+a {
+    font-weight: 300;
+    color: #6b7886;
+    text-decoration: none;
+}
+
+a:hover {
+  color: #F8981C;
+}
+
+/*END OF PORTFOLIO SECTION*/
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1200px) {
+  .grid {
+    width: 1115px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .grid {
+    max-width: 850px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .col-4, .col-6 {
+    width: 100%;
+  }
+    
+  .middle {
+    text-align: center;
+  } 
+}
